@@ -39,3 +39,14 @@ body {
     justify-content: center;
     max-width: 70%;
 }
+
+#timeline {
+    font-family: sans-serif;
+    margin: 4rem 0;
+    background-color: rgb(236, 236, 236);
+    width: 100vw;
+}
+
+#timeline-content {
+    margin: 5rem;
+}
