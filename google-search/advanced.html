@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Vyhledávač</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Vyhledávání</a>
+                </li>
+                <li>
+                    <a href="image.html">Obrázky</a>
+                </li>
+                <li>
+                    <a href="advanced.html">Pokročilé</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Pokročilé vyhledávání</h1>
+        <form class="advanced-form"action="https://google.com/search" name="f">
+            <div class="field">
+                <label for="field1">Všechna tato slova: </label>
+                <input type="text" class="textinput" id="field1" value=""  name="as_q">
+            </div>
+            <br>
+            <div class="field">
+                <label for="field2">Přesně toto slovo nebo sousloví: </label>
+                <input type="text" class="textinput" id="field2" value=""  name="as_epq">
+            </div>
+            <br>
+            <div class="field">
+                <label for="field3">Kterékoliv z těchto slov: </label>
+                <input type="text" class="textinput" id="field3" value=""  name="as_oq">
+            </div>
+            <br>
+            <div class="field">
+                <label for="field4">Žádné z těchto slov: </label>
+                <input type="text" class="textinput" id="field4" value=""  name="as_eq">
+            </div>
+            <input class="btn" type="submit" value="Rozšířené vyhledávání">
+        </form>
+    </main>
+</body>
+</html>

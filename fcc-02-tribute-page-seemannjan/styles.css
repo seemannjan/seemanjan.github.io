@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    margin: 3rem;
+    text-align: center;
+}
+
+#image {
+    max-height: 100%;
+    width: 95%;
+    display: block;
+
+}
+#img-div {
+    width: 50%;
+}
+#tribute-info {
+    width: 50%;
+    font-size: 1.05rem;
+}
+
+#paragraph {
+    display: flex;
+    justify-content: center;
+    max-width: 70%;
+}

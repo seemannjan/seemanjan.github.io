@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+:root {
+    --color-primary: rgb(0, 140, 255);
+}
+
+/* CSS Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Utility Classes */
+
+.text-primary {
+    color: var(--color-primary)
+}
+
+.bg-light {
+    background-color: rgb(250, 250, 250);
+    color: black;
+}
+
+.bg-dark {
+    background-color: rgb(59, 59, 59);
+    color: rgb(228, 228, 228);
+}
+
+p {
+    margin: 0.75ren 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.l-heading {
+    font-size: 3.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.m-heading {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.py-1 {
+    padding: 1.5rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+/* Navbar */
+
+#navbar {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+}
+
+#navbar h2 {
+    padding: 0.5rem 0;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    padding-left: 5.5rem;
+}
+
+#navbar ul li a {
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li :hover,
+#navbar ul li .chosen {
+    border-bottom: solid 1px #778DA9;
+}
+
+/* Mobile navigation */
+
+.mobile-nav-back {
+    display: none;
+    height: 8rem;
+    width: 100%;
+    position: fixed;
+    background-color: #333;
+}
+
+.mobile-nav-icon {
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.mobile-nav-close {
+    margin-top: 0.5rem;
+    display: none;
+}
+
+/* Showcase */
+
+#showcase {
+    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../IMG/bg-pic.avif") no-repeat center center/cover;
+    height: 100vh;
+    width: auto;
+    color: #fff;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: var(--color-primary);
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background:rgb(22, 57, 255);
+}
+
+.btn-dark {
+    background: #333;
+    color: white;
+}
+
+/* Section Co děláme */
+
+#what .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#what .item {
+    text-align: center;
+    padding: 1rem 2rem 2rem 4rem;
+    flex: 1;
+}
+
+#what .item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.3rem;
+}
+
+#what .item p {
+    font-size: 1.3rem;
+}
+
+#what .items .item i {
+    background:rgb(236, 236, 236);
+    padding: 3rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+/* Section Our Team */
+
+#our-team {
+    display: flex;
+}
+
+#our-team .team-img {
+    flex: 1;
+    background: url("../IMG/pic1.avif") no-repeat center center/cover;
+}
+
+#our-team .team-text {
+    flex: 1;
+    padding: 0 4rem;
+    margin-bottom: 5rem;
+}
+
+#our-team .team-text ul {
+    list-style: none;
+}
+
+#our-team .team-text .teamName {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+#our-team .team-text .teamText {
+    font-size: 1.3rem;
+}
+
+/* Section Our Work */
+
+#our-work {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#our-work .our-work-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#our-work img {
+    margin: auto;
+    width: 80%;
+    max-height: 450px;
+}
+
+
+/* Section Contact Info */
+
+#contact-info {
+    display: flex;
+}
+
+#contact-info .contact-text {
+    flex: 1;
+    text-align: left;
+    font-size: 1.3rem;
+    padding: 2rem 6rem;
+    margin-bottom: 5rem;
+}
+
+#contact-info .contact-text h2 {
+    text-align: center;
+}
+
+#contact-info .contact-text ul li {
+    list-style: none;
+    margin: 2rem 0;
+}
+
+#contact-info .contact-text .contact-title {
+    font-weight: bolder;
+}
+
+#contact-info #contact-form {
+    flex: 1;
+    margin: 1rem;
+}
+
+/* Section Reservation */
+
+#contact-form h1 {
+    margin-top: 3rem;
+}
+
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+
+#contact-form textarea {
+    height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #f7c08a;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    border-top: 1px dotted var(--color-primary);
+}
+

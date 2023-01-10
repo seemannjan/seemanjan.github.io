@@ -1,0 +1,61 @@
+#navbar {
+    padding: 1rem 0;
+}
+
+#navbar h2 {
+    padding-left: 3rem;
+}
+
+#navbar ul {
+    display: none;
+}
+
+.mobile-nav-icon {
+    display: inline-block;
+    position: fixed;
+    z-index: 200;
+    right: 2%;
+}
+
+.mobile-nav-close {
+    position: fixed;
+    z-index: 200;
+    right: 2%;
+}
+
+.mobile-nav-back {
+    margin-top: 4rem;
+}
+
+.mobile-nav-back ul {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+    list-style: none;
+}
+
+#what .items {
+    flex-direction: column;
+}
+
+
+#our-team {
+    flex-direction: column;
+}
+
+#our-work img {
+    max-height: none;
+}
+
+#our-work .our-work-images {
+    flex-wrap: wrap;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-info .contact-text {
+    padding: 2em 0 2em 1em;
+}
