@@ -55,6 +55,9 @@ h1 {
     padding: 1rem;
     background: var(--secondary-color);
     transition: all 0.5s ease-in-out;
+
+    visibility: hidden;
+    opacity: 0;
 }
 
 /* Pravá strana */
@@ -121,6 +124,11 @@ h1 {
     background-color: var(--secondary-color);
 }
 
+#timeline ul li.show div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
 
 @media (max-width: 900px) {
     #timeline ul li div {
