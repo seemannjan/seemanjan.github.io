@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <img
+            id="header-img"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+            alt="original trombones logo"
+          />
+        </div>
+
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#features">Nabídka</a></li>
+            <li><a class="nav-link" href="#how-it-works">Jak k nám</a></li>
+            <li><a class="nav-link" href="#pricing">Ceník</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="container"></div>
+
+      <section id="hero">
+        <h2>Domácí, skvělá a levná kuchyně!</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Na co máte chuť?"
+            required
+          />
+          <input id="submit" type="submit" value="Objednat" class="btn" />
+        </form>
+      </section>
+
+      <div class="container">
+        <section id="features">
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-book"></i></div>
+            <div class="desc">
+              <h2>Výhodné menu</h2>
+              <p>
+                V době oběda pro Vás máme připravené každodenní výhodné menu.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-home"></i></div>
+            <div class="desc">
+              <h2>Skvělé prostředí</h2>
+              <p>
+                Naše restaurace se nachází v klidnější části města. Je tu krásně.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-3x fa-truck" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>Rozvoz jídel</h2>
+              <p>
+                Nově pro Vás jídla také doručujeme k Vám domů.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="how-it-works">
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/NLPuCclm5lA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <section id="pricing">
+          <div class="product" id="tenor">
+            <div class="level">Snídaně</div>
+            <h2>Od 55 Kč</h2>
+            <ol>
+              <li>nabídka1</li>
+              <li>nabídka2</li>
+              <li>nabídka3</li>	
+              <li>nabídka4</li>
+            </ol>
+            <button class="btn">více</button>
+          </div>
+          <div class="product" id="bass">
+            <div class="level">Obědy</div>
+            <h2>Od 120 Kč</h2>
+            <ol>
+              <li>Polévky</li>
+              <li>Minutky</li>
+              <li>Menu</li>
+              <li>Pití</li>
+            </ol>
+            <button class="btn">Více</button>
+          </div>
+          <div class="product" id="valve">
+            <div class="level">Večeře</div>
+            <h2>Od 115 Kč</h2>
+            <ol>
+              <li>Večeře</li>
+              <li>Dle</li>
+              <li>Aktuální</li>
+              <li>Nabídky</li>
+            </ol>
+            <button class="btn">Více</button>
+          </div>
+        </section>
+        <footer>
+          <ul>
+            <li><a href="#">Alergeny</a></li>
+            <li><a href="#">Obchodní podmínky</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+          <span>Copyright 2023</span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
